@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="fontaws/css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontaws/css/all.min.css" />
+
+
+    <title>Translate</title>
+</head>
+
+<body>
+
+    <!--------Navigation bar------->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3>History</h3>
+            </div>
+            <ul id="last">
+
+            </ul>
+            <ul class="list-unstyled" id="last-users">
+
+
+
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <button type="button" id="sidebarCollapse" style="background-color: #0069D9;color: #fff;" class="btn">
+                <i class="fas fa-align-left"></i>
+                <span>Translate History</span>
+            </button>
+            <form id="translate-form">
+                <div class="row">
+                    <div class="col-md-6 card">
+                        <div class="content-menu card">
+                            <div class="row" id="option">
+                                <div class="form-group col-md-5">
+                                    <select class="form-control" id="language1">
+                                        <option value="tr">Turkish</option>
+                                        <option value="az">Azerbaijan</option>
+                                        <option value="en">English</option>
+                                        <option value="de">Germany</option>
+                                        <option value="sq">Albanian</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="af">Afrikaans</option>
+                                        <option value="be">Belarusian</option>
+                                        <option value="bg">Bulgarian</option>
+                                        <option value="cy">Welsh</option>
+                                        <option value="hu">Hungarian</option>
+                                        <option value="it">Georgian</option>
+                                        <option value="ar">Italian</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="kn">Kannada</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ko">Korean</option>
+                                        <option value="ro">Romanian</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="sr">Serbian</option>
+                                        <option value="sk">Slovakian</option>
+                                        <option value="sl">Slovenian</option>
+                                        <option value="uz">Uzbek</option>
+                                        <option value="uk">Ukrainian</option>
+                                        <option value="cs">Czech</option>
+                                        <option value="sv">Swedish</option>
+                                        <option value="ja">Japanese</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <span><i class="fas fa-arrow-right"></i></span>
+                                    <span><i class="fas fa-arrow-down"></i></span>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <select class="form-control" id="language2">
+                                        <option value="az">Azerbaijan</option>
+                                        <option value="tr">Turkish</option>
+                                        <option value="en">English</option>
+                                        <option value="de">Germany</option>
+                                        <option value="sq">Albanian</option>
+                                        <option value="ar">Arabic</option>
+                                        <option value="af">Afrikaans</option>
+                                        <option value="be">Belarusian</option>
+                                        <option value="bg">Bulgarian</option>
+                                        <option value="cy">Welsh</option>
+                                        <option value="hu">Hungarian</option>
+                                        <option value="it">Georgian</option>
+                                        <option value="ar">Italian</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="kn">Kannada</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="ko">Korean</option>
+                                        <option value="ro">Romanian</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="sr">Serbian</option>
+                                        <option value="sk">Slovakian</option>
+                                        <option value="sl">Slovenian</option>
+                                        <option value="uz">Uzbek</option>
+                                        <option value="uk">Ukrainian</option>
+                                        <option value="cs">Czech</option>
+                                        <option value="sv">Swedish</option>
+                                        <option value="ja">Japanese</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <textarea id="wordtext" rows="7" style="resize: none;border-radius: 5px;" required></textarea>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 card">
+                        <div class="content-menu card">
+                            <button type="submit" id="yenile" class="btn btn-primary">Translate</button>
+                            <span id="outputWord" style="color :#333;"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="row text-center" id="save">
+                <div class="col-md-12">
+                    <button class="btn" id="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll/smooth-scroll.js"></script>
+    <script src="fontaws/js/fontawesome.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+    </script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+    </script>
+
+
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="translate.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
